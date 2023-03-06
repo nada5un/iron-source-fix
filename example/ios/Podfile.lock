@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - ironsource_mediation (1.1.0):
+    - Flutter
+    - IronSourceSDK (= 7.2.1.2)
+  - IronSourceSDK (7.2.1.2)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - ironsource_mediation (from `.symlinks/plugins/ironsource_mediation/ios`)
+
+SPEC REPOS:
+  trunk:
+    - IronSourceSDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  ironsource_mediation:
+    :path: ".symlinks/plugins/ironsource_mediation/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  ironsource_mediation: 116bccaa28434e565966c65beb91b4c9d2a32d83
+  IronSourceSDK: 58febda45afa4b16f91dacb1b3541737ae3fedb3
+
+PODFILE CHECKSUM: 04861b1d816fb19bd20d839c49dbdc3e06ba8bad
+
+COCOAPODS: 1.11.3
