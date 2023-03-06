@@ -23,5 +23,5 @@ Mobile sdk for IronSource
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
   # ironSource
-  s.dependency 'IronSourceSDK','7.2.1.2'
+  s.dependency 'IronSourceSDK','7.2.6.0'
 end
