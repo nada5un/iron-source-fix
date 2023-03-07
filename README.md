@@ -14,3 +14,9 @@ For any question please contact us [here](https://ironsrc.formtitan.com/knowledg
 
 ## License 
 https://developers.is.com/ironsource-mobile/general/ironsource-platform-online-terms-conditions/
+
+## TO USE
+
+* Match the type of MainActivity in mainActivity.kt 
+and the activity type in 
+android/src/main/kotlin/com/ironSource/ironsource_mediation/IronSourceMeditationPlugin.kt.
