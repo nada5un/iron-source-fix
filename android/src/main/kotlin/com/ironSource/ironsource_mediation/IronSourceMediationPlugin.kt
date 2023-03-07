@@ -32,6 +32,7 @@ import java.util.concurrent.Executors
 import kotlin.math.abs
 import io.flutter.embedding.android.FlutterFragmentActivity
 import androidx.fragment.app.FragmentActivity
+import com.ryanheise.audioservice.AudioServiceFragmentActivity
 
 /** IronSourceMediationPlugin */
 class IronSourceMediationPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, LifecycleObserver {
@@ -40,7 +41,7 @@ class IronSourceMediationPlugin : FlutterPlugin, MethodCallHandler, ActivityAwar
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
   /// when the Flutter Engine is detached from the Activity
   private lateinit var channel: MethodChannel
-  private var activity: FragmentActivity? = null
+  private var activity: AudioServiceFragmentActivity? = null
 
   // Banner related
   private var mBannerContainer: FrameLayout? = null
@@ -767,7 +768,7 @@ class IronSourceMediationPlugin : FlutterPlugin, MethodCallHandler, ActivityAwar
 
   /** region ActivityAware =======================================================================*/
   override fun onAttachedToActivity(binding: ActivityPluginBinding) {
-    activity = binding.activity as FragmentActivity
+    activity = binding.activity as AudioServiceFragmentActivity
     activity?.lifecycle?.addObserver(this)
   }
 
@@ -777,7 +778,7 @@ class IronSourceMediationPlugin : FlutterPlugin, MethodCallHandler, ActivityAwar
   }
 
   override fun onReattachedToActivityForConfigChanges(binding: ActivityPluginBinding) {
-    activity = binding.activity as FragmentActivity
+    activity = binding.activity as AudioServiceFragmentActivity
     activity?.lifecycle?.addObserver(this)
   }
 
